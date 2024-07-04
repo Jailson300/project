@@ -1,0 +1,351 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="project.css">
+  <title>CUISINE</title> 
+
+<style> 
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.response {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .response {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .response {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #32e0ff;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+</style> 
+
+</head> 
+
+<body> 
+  
+  <img src="Salai_Taret_Flag.svg.png" alt="Flag" class="responsive">
+
+  <ul>
+  <li><a href="Home.html" target="_blank">HOME</a></li>
+  <li><a href="About.html" target="_blank">ABOUT</a></li>
+   <li><a href="Cuisine.html" target="_blank">CUISINE</a></li>
+  <li><a href="Phcchc.html" target="_blank">CULTURE</a></li>
+   <li><a href="Festival.html" target="_blank">FESTIVALS</a></li>
+   <li><a href="News.html" target="_blank">HISTORICAL SITES</a></li>
+   <li><a href="nhmcom.html"  target="_blank">SPORTS</a>
+  <li><a href="Gallery.html">GALLERY</a></li>
+  <li><a href="Contact.html">CONTACT</a></li>
+   </li>
+  </ul>
+
+<h2 style="text-align: center; font-size: 30px;"> VARIOUS CUISINE OF MEITEI</h2> 
+
+<h2 style="text-align: left; font-size: 25px;"> STAPLE FOODS</h2> 
+<div class="row">
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="RICE.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Rice is the staple food for the Meitei people, forming the base of most meals.</div>
+      </div>
+    </div>
+    <div class="desc">RICE</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="FISH.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Fish is a key ingredient in Meitei cuisine, given the abundance of rivers and lakes in Manipur. Freshwater fish is preferred, and it is often smoked, dried, or fermented.</div>
+      </div>
+    </div>
+    <div class="desc">FISH</div>
+  </div>
+</div>
+</div>
+
+<h2 style="text-align: left; font-size: 25px;"> POPULAR DISHES</h2> 
+<div class="row">
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="EROMBA.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Eromba is a traditional dish made with boiled vegetables mashed with fermented fish (Ngari) and seasoned with red chilies and herbs. It is often garnished with aromatic leaves like cilantro or maroi nakupi (a type of garlic chive).There are also various types of "Eromba" according to the ingredient used.</div>
+      </div>
+    </div>
+    <div class="desc">EROMBA</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="KANGSHOI.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Kangshoi is a light vegetable stew made with seasonal vegetables, coarsely chopped, and cooked with fermented fish, ginger, garlic, and green chilies. It is usually served hot with rice.</div>
+      </div>
+    </div>
+    <div class="desc">KANGSHOI</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="NGA-THONGBA.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Nga-Thongba or Manipuri-styled Fish Curry is one of the main dishes of the Meitei.It is served in almost every Events or Occasion as the main dish.</div>
+      </div>
+    </div>
+    <div class="desc">NGA-THONGBA</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="OOTI.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Ooti is a comforting dish made with green peas or black-eyed peas, some green leaves veggies and  rice. It has a slightly tangy flavor and is often enjoyed during festivals.</div>
+      </div>
+    </div>
+    <div class="desc">OOTI</div>
+  </div>
+</div>
+</div>
+
+<h2 style="text-align: left; font-size: 25px;"> POPULAR SNACK</h2>
+<div class="row">
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="SINGJU.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Singju is a popular salad made with a variety of fresh, finely chopped vegetables like cabbage, lotus stem, banana flower, and herbs, mixed with a spicy and tangy dressing of roasted chickpea powder, fermented fish, and red chili.</div>
+      </div>
+    </div>
+    <div class="desc">SINGJU</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="BORA.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Bora is a Meitei Manipuri ethnic food item, prepared with oil fried vegetables. Other recipes may include fish flavor or prawn flavor. It is one of the most popular evening side dish in the Indian state of Manipur, especially among the Manipuri ethnicity.</div>
+      </div>
+    </div>
+    <div class="desc">BORA</div>
+  </div>
+</div>
+</div>
+
+<h2 style="text-align: left; font-size: 25px;">SIDE DISHES</h2>
+<div class="row">
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="MOROK-METPA.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">A spicy chutney made with fresh green or red chilies, often pounded with ngari (fermented fish), roasted tomatoes, and herbs. It is a common accompaniment to meals.</div>
+      </div>
+    </div>
+    <div class="desc">MOROK-METPA</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="ALOO-KANGMET.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">A spicy dry chutney-type side-dish made with Potato,fresh green or red chilies and pounded ngari (fermented fish) by mixing it together. It is a common accompaniment to meals.</div>
+      </div>
+    </div>
+    <div class="desc">ALOO-KANGMET</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="KANGHOU.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">A dry-fried dish made with a variety of vegetables, or meat, seasoned with traditional spices. It is a versatile side dish that can be made with different ingredients based on availability.</div>
+      </div>
+    </div>
+    <div class="desc">KANGHOU</div>
+  </div>
+</div>
+</div>
+
+<h2 style="text-align: left; font-size: 25px;">UNIQUE INGREDIENTS</h2>
+<div class="row">
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="YONGCHAK.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">A type of tree bean used in salads and curries, known for its strong smell and distinctive taste.</div>
+      </div>
+    </div>
+    <div class="desc">YONGCHAK</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="NAKUPPI.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Aromatic herbs similar to garlic chives and Chinese chives, respectively, used for garnishing and flavoring.</div>
+      </div>
+    </div>
+    <div class="desc">MAROI-NAKUPPI</div>
+  </div>
+</div>
+
+<div class="response">
+  <div class="gallery">
+    <div class="container">
+      <img src="NGARI.jpg" alt="Cuisine" class="image">
+      <div class="overlay">
+        <div class="text">Ngari is fermented fish, typically made from small freshwater fish varieties. The fermentation process gives it a strong, pungent aroma and a deep, savory flavor, making it a staple in Manipuri households.Ngari is more than just an ingredient; it holds cultural significance for the Meitei people.Ngari is a source of pride for the community</div>
+      </div>
+    </div>
+    <div class="desc">NGARI</div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br>
+<footer>
+  <div class="footer-container">
+      <div class="footer-section creator">
+          <h3>Creator</h3>
+          <p>Designed and developed by Boinao Hemam</p>
+      </div>
+      <div class="footer-section contact">
+          <h3>Contact Info</h3>
+          <p>Email: boinaohemam@gmail.com</p>
+          <p>Phone: +91 7640859288</p>
+      </div>
+      <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+              <a href="#"><img src="instagram-icon.jpg" alt="Instagram"></a>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Boinao Hemam. All rights reserved.</p>
+  </div>
+</footer>
+
+</body> 
+
+</html> 
+
+ 
