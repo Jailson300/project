@@ -16,46 +16,54 @@
   <link rel="stylesheet" href="project.css">
 
 <style> 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
 
-#customers { 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
-  font-family: Arial, Helvetica, sans-serif; 
-
-  border-collapse: 5px solid black; 
-
-  width: 100%; 
-
-} 
-
-#customers td, #customers th { 
-
-  border: 2px solid rgb(31, 17, 17); 
-
-  padding: 18px; 
-
-  text-align: center; 
-
-} 
-
-#customers  {background-color: rgba(100,144,90,0.2);} 
-
-#customers tr:hover {background-color: #7ecccc;} 
-
-#customers th { 
-
-  padding-top: 12px; 
-
-  padding-bottom: 12px; 
-
-  text-align: left; 
-
-  background-color: #04AA6D; 
-
-  color: white; 
-
-} 
-
+.row {
+      display: flex;
+    }
+    
+    .column {
+      flex: 49.99%;
+      padding: 5px;
+      
+    }
+    
+    .flex-container {
+      display: flex;
+      flex: 49.99%;
+      flex-direction: row;
+    }
+    
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+        flex: 99.99%;
+      }
+    }
 </style> 
 
 </head> 
@@ -77,55 +85,71 @@
    </li>
   </ul>
 
-<h2 style="text-align: center; font-size: 30px;"> VARIOUS PROGRAMS OF NHM</h2> 
+<h2 style="text-align: center; font-size: 30px;">SPORTS</h2> 
 
-<table id="customers"> 
+<h3 style="font-family: Arial, Helvetica, sans-serif;">Indigenous Sports</h3>
+<div class="row">
+  <div class="flex-container">
+    <div class="column">
+        <h3><b>Mukna(Manipuri Wrestling)</b></h3>
+         <button class="accordion"><img src="mukna.jpg" style="width: 100%;" alt="error"></button>
+         <div class="panel">
+         <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mukna is a traditional form of wrestling that has been practiced in Manipur for centuries. It involves grappling techniques and is often performed during festivals and important cultural events. Wrestlers aim to throw their opponent to the ground using skillful techniques.</p>
+         <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Mukna , please visit the link <a href="https://en.wikipedia.org/wiki/Mukna">Click Here</a></p>
+        </div>
+    </div>
+    <div class="column">
+      <h3><b>Sagol-kangjei(Polo)</b></h3>
+      <button class="accordion"><img src="sagol_kangjei.jpg" style="width: 100%;" alt="error"></button>
+      <div class="panel">
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sagol Kangjei is believed to be one of the origins of modern polo. It is played with seven players on each team, riding Manipuri ponies. The game is fast-paced and requires a high level of skill in both riding and hitting the ball with a long-handled mallet.</p>
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Sagol kangjei , please visit the link <a href="https://simple.wikipedia.org/wiki/Sagol_Kangjei">Click Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<tr> <td><a href="https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=1056&lid=616" target="_blank"><b>COMMUNICABLE DISEASE CONTROL PROGRAMME</b></a></td> 
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 
-</tr> 
-
-<tr> <td><a href="https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=1041&lid=614"  target="_blank"><b>NON-COMMUNICABLE DISEASE CONTROL PROGRAMEME</b></a></td> 
-
-   </tr> 
-
-<tr><td><a href="https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=1213&lid=167" target="_blank"><b>HEALTH SYSTEM STRENGETHENING</b></a></td> 
-
-   </tr> 
-
-    <tr> <td><a href="https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=794&lid=168" target="_blank"><b>RMNCH+A</b></a></td> 
-
-    </tr> 
-
-<tr> <td><a href="https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=1040&lid=345" target="_blank"><b>INFRASTRUCTURE MAINTAINANCE</b></a></td> 
-
-    </tr> 
-
-     </table> 
-
-     <footer>
-      <div class="footer-container">
-          <div class="footer-section creator">
-              <h3>Creator</h3>
-              <p>Designed and developed by Boinao Hemam</p>
-          </div>
-          <div class="footer-section contact">
-              <h3>Contact Info</h3>
-              <p>Email: boinaohemam@gmail.com</p>
-              <p>Phone: +91 7640859288</p>
-          </div>
-          <div class="footer-section social">
-              <h3>Follow Us</h3>
-              <div class="social-icons">
-                  <a href="https://www.facebook.com/martin.hmz.3"><img src="facebook-icon.png" alt="Facebook"></a>
-                  <a href="https://x.com/HemamBoina54707"><img src="twitter-icon.png" alt="Twitter"></a>
-                  <a href="https://www.instagram.com/boinaohemam/"><img src="instagram-icon.jpg" alt="Instagram"></a>
-              </div>
+<footer>
+  <div class="footer-container">
+      <div class="footer-section creator">
+          <h3>Creator</h3>
+          <p>Designed and developed by Boinao Hemam</p>
+      </div>
+      <div class="footer-section contact">
+          <h3>Contact Info</h3>
+          <p>Email: boinaohemam@gmail.com</p>
+          <p>Phone: +91 7640859288</p>
+      </div>
+      <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/martin.hmz.3"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="https://x.com/HemamBoina54707"><img src="twitter-icon.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com/boinaohemam/"><img src="instagram-icon.jpg" alt="Instagram"></a>
           </div>
       </div>
-      <div class="footer-bottom">
-          <p>&copy; 2024 Boinao Hemam. All rights reserved.</p>
-      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Boinao Hemam. All rights reserved.</p>
+  </div>
+</footer>
     </footer>
   
 </div>	
