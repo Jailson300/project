@@ -64,6 +64,59 @@
         flex: 99.99%;
       }
     }
+
+ .person {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .person {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
 </style> 
 
 </head> 
@@ -104,6 +157,91 @@
       <div class="panel">
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sagol Kangjei is believed to be one of the origins of modern polo. It is played with seven players on each team, riding Manipuri ponies. The game is fast-paced and requires a high level of skill in both riding and hitting the ball with a long-handled mallet.</p>
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Sagol kangjei , please visit the link <a href="https://simple.wikipedia.org/wiki/Sagol_Kangjei">Click Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="flex-container">
+    <div class="column">
+        <h3><b>Arambai Hunba (Manipuri Dart Throwing)</b></h3>
+         <button class="accordion"><img src="arambai-hunba.jpg" style="width: 100%;" alt="error"></button>
+         <div class="panel">
+         <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This traditional sport involves the skillful throwing of arambai, which are dart-like weapons. It was historically used by Manipuri warriors. The sport requires precision and control.Arambai, literally meaning darts, is a simple weapon at first sight. The weapon has an iron arrow head, which is attached to feathers of peacocks though kites' feathers were also used in the past. Users of these weapons, who are horse riders, swirl the deadly poisoned darts and throw it to the enemy with an unparalleled accuracy and speed which is gathered through fast galloping of the Manipuri ponies.</p>
+         <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Arambai , please visit the link <a href="https://en.wikipedia.org/wiki/Arambai">Click Here</a></p>
+        </div>
+    </div>
+    <div class="column">
+      <h3><b>Yubi Lakpi (Manipuri Rugby)</b></h3>
+      <button class="accordion"><img src="yubi-lakpi.jpg" style="width: 100%;" alt="error"></button>
+      <div class="panel">
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Yubi Lakpi, which translates to "coconut snatching," is a game similar to rugby but played with a coconut instead of a ball. The objective is to carry the coconut and touch the opponent's goal line. The game is played barefoot, and it emphasizes agility and strength.</p>
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Yubi-lakpi , please visit the link <a href="https://en.wikipedia.org/wiki/Yubi_lakpi">Click Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="flex-container">
+    <div class="column">
+        <h3><b>Thang Ta (Manipuri Martial Arts)</b></h3>
+         <button class="accordion"><img src="thang ta.jpg" style="width: 100%;" alt="error"></button>
+        <div class="panel">
+         <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Thang Ta is a traditional martial art form that includes both armed and unarmed combat techniques. It involves the use of swords (thang) and spears (ta), as well as hand-to-hand combat techniques. Thang Ta is an integral part of the martial culture of the Meitei people.This aspect of Thang Ta involves unarmed combat techniques such as strikes, kicks, blocks, and grappling. It focuses on agility, speed, and the effective use of one's body to overcome opponents.Thang Ta includes various forms or sequences of movements (called "sajol"). These forms are practiced repeatedly to develop muscle memory and precision.</p>  
+        </div>
+    </div>  
+    <div class="column">
+      <h3><b>Hiyang Tannaba (Boat Racing)</b></h3>
+      <button class="accordion"><img src="hiyang-tanaba.jpg" style="width: 100%;" alt="error"></button>
+      <div class="panel">
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hiyang Tannaba is a traditional boat race held during the Lai Haraoba festival. The boats, known as hiyang, are beautifully decorated and rowed by a team of oarsmen. The race is a display of strength, coordination, and cultural heritage.</p>
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Hiyang-Tannaba , please visit the link <a href="https://en.wikipedia.org/wiki/Hiyang_Tannaba">Click Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<h2>SOME OF MEITEI SPORT PERSONS</h2> 
+
+<div class="row">
+  <div class="person">
+    <div class="card">
+      <img src="img1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="card">
+      <img src="img2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -150,7 +288,7 @@
       <p>&copy; 2024 Boinao Hemam. All rights reserved.</p>
   </div>
 </footer>
-    </footer>
+    
   
 </div>	
 </body>
