@@ -41,7 +41,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-.row {
+.row1 {
       display: flex;
     }
     
@@ -65,11 +65,24 @@
       }
     }
 
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+    
  .person {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
+}
+
+.person img{
+   width: 80px;
+   height: 250px;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -83,6 +96,7 @@
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 550px;
 }
 
 /* Some left and right padding inside the container */
@@ -106,6 +120,14 @@
   outline: 0;
   display: inline-block;
   padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button a{
   color: white;
   background-color: #000;
   text-align: center;
@@ -141,7 +163,7 @@
 <h2 style="text-align: center; font-size: 30px;">SPORTS</h2> 
 
 <h3 style="font-family: Arial, Helvetica, sans-serif;">Indigenous Sports</h3>
-<div class="row">
+<div class="row1">
   <div class="flex-container">
     <div class="column">
         <h3><b>Mukna(Manipuri Wrestling)</b></h3>
@@ -162,7 +184,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row1">
   <div class="flex-container">
     <div class="column">
         <h3><b>Arambai Hunba (Manipuri Dart Throwing)</b></h3>
@@ -183,7 +205,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row1">
   <div class="flex-container">
     <div class="column">
         <h3><b>Thang Ta (Manipuri Martial Arts)</b></h3>
@@ -206,6 +228,7 @@
 
 <h2>SOME OF MEITEI SPORT PERSONS</h2> 
 
+<h3>Woman Section:</h3>
 <div class="row">
   <div class="person">
     <div class="card">
@@ -214,7 +237,7 @@
         <h2>Nameirakpam Kunjarani Devi</h2>
         <p class="title">Weightlifter</p>
         <p>Nameirakpam Kunjarani Devi was born 1 March, 1968.  She is noted weightlifter from the state of Manipur. She received the Arjuna award in 1990 and also shared the Rajiv Gandhi Khel Ratna award with Leander Paes for the year 1996-1997. She also won the K.K.Birla Sports award in the same year.</p>
-        <p><button class="button">Contact</button></p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Kunjarani_Devi">Know More</a></button></p>
       </div>
     </div>
   </div>
@@ -225,8 +248,8 @@
       <div class="container">
         <h2>Saikhom Mirabai Chanu</h2>
         <p class="title">Weightlifter</p>
-        <p>Saikhom Mirabai Chanu was born on 8 August 1994.  Mirabai Chanu is an Indian weightlifter who won silver medal in the women's 48 kg weight class at Commonwealth Games, 2014 at Glasgow.</p>
-        <p><button class="button">Contact</button></p>
+        <p>Saikhom Mirabai Chanu was born on 8 August 1994.  Mirabai Chanu is an Indian weightlifter who won silver medal in the women's 48 kg weight class at Commonwealth Games, 2014 at Glasgow.Mirabai Chanu lifted a total of 201 kg, winning the gold medal at the CWG 2022. She won the silver medal at the 2020 Tokyo Olympics in the Women's 49 kg category.</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Saikhom_Mirabai_Chanu">Know More</a></button></p>
       </div>
     </div>
   </div>
@@ -238,7 +261,71 @@
         <h2>Khumukcham Sanjita Chanu</h2>
         <p class="title">Weightlifter</p>
         <p>Khumukcham Sanjita Chanu was born on 2nd January 1994. She is an Indian weightlifter who won gold medal in the women's 48 kg weight class at the Commonwealth Games , 2014  at Glasgow</p>
-        <p><button class="button">Contact</button></p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Khumukcham_Sanjita_Chanu">Know More</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="person">
+    <div class="card">
+      <img src="Sarita.jpg" alt="error" style="width:100%">
+      <div class="container">
+        <h2>Laishram Sarita Devi</h2>
+        <p class="title">Indian professional boxer</p>
+      <p>Laishram Sarita Devi is an Indian boxer from Manipur. She is a national champion and a former world champion in the lightweight class. In 2009, she was awarded Arjuna award by the government of India for her achievement</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Laishram_Sarita_Devi">Know More</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="card">
+      <img src="sarjubala.jpg" alt="error" style="width:100%">
+      <div class="container">
+        <h2>Samjetsabam Sarjubala Devi</h2>
+        <p class="title">Indian professional boxer</p>
+        <p>Samjetsabam Sarjubala Devi is an Indian woman boxer from Manipur and represented India at the 2016 Rio Olympics. After being awarded as the Best Boxer at Youth World Women Boxing Championship organised at Turkey, the Olympic Gold Quest announced support for Sarjubala Devi in 2012.</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sarjubala_Devi">Know More</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="person">
+    <div class="card">
+      <img src="sushila.jpg" alt="error" style="width:100%">
+      <div class="container">
+        <h2>Pukhrambam Sushila Chanu</h2>
+        <p class="title">Hockey Player</p>
+        <p>Sushila Chanu Pukhrambam is an Indian field hockey player. A former captain of Indian national team, she has over 150 international caps to her credit. Born in Imphal, Manipur, Chanu began playing hockey at the age of eleven, and was soon selected for the national camp. She was awarded Arjuna Award for year 2023.</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sushila_Chanu">Know More</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="card">
+      <img src="sanggai.jpg" alt="error" style="width:100%">
+      <div class="container">
+        <h2>Sanggai Ibemhal Chanu Maimom</h2>
+        <p class="title">Weightlifter</p>
+        <p>Sanggai Ibemhal Chanu Maimom is a female field hockey player from India, who made her international debut for her native country in April 1998 in a friendly against Germany. She played as a midfielder or as a centre forward. At the 2001 World Cup Qualifier she was named Young Player of the Tournament.</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sanggai_Chanu">Know More</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="card">
+      <img src="bichu.jpg" alt="error" style="width:100%">
+      <div class="container">
+        <h2>Kharibam Bichu Devi</h2>
+        <p class="title">Hockey Player</p>
+        <p>Bichu Devi Kharibam is a field hockey player and member of Indian women's hockey team. She hails from Manipur. She plays for Indian Oil Corporation Limited in the domestic hockey tournaments. She is a goalkeeper.</p>
+        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Bichu_Devi_Kharibam">Know More</a></button></p>
       </div>
     </div>
   </div>
