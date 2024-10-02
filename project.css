@@ -90,13 +90,10 @@ ul {
       display: inline-block;
       width: 24px;
       height: 24px;
+      color: white;
   }
   
-  .social-icons img {
-      width: 100%;
-      height: auto;
-  }
-  
+    
   .footer-bottom {
       text-align: center;
       margin-top: 20px;
