@@ -14,6 +14,7 @@
 
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style> 
 .accordion {
@@ -41,101 +42,99 @@
   transition: max-height 0.2s ease-out;
 }
 
-.row1 {
-      display: flex;
+   
+.players_section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #e2e7e2;
     }
-    
-    .column {
-      flex: 49.99%;
-      padding: 5px;
+        .box {
+          display: flex;
+          flex-direction: column;
+          width: 300px; /* Adjust to your needs */
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          overflow: hidden;
+          margin: 10px;
+          width: 23%;
+          background-color: #f9f9f9;
+        }
+
+        .box1 {
+          display: flex;
+          flex-direction: column;
+          width: 300px; /* Adjust to your needs */
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          overflow: hidden;
+          margin: 10px;
+          width: 43%;
+          background-color: #f9f9f9;
+        }
+
+        @media screen and (max-width: 650px) {
+        .box {
+           width: 100%;
+           display: block;
+          }
+
+        .box1 {
+          width: 100%;
+          display: block;
+        }
+        }
       
-    }
-    
-    .flex-container {
-      display: flex;
-      flex: 49.99%;
-      flex-direction: row;
-    }
-    
-    /* Responsive layout - makes a one column layout instead of a two-column layout */
-    @media (max-width: 800px) {
-      .flex-container {
-        flex-direction: column;
-        flex: 99.99%;
-      }
-    }
+        .box-img {
+          height: 200px;
+          background-size: cover;
+          background-position: center;
+        }
 
- html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-    
- .person {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.person img{
-   width: 100%;
-   height: 260px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .person {
-    width: 100%;
-    display: block;
-  }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button a{
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
+        .box-img1 {
+          height: 400px;
+          background-size: cover;
+          background-position: center;
+        }
+      
+        .box-content {
+          padding: 15px;
+          background-color: #f9f9f9;
+          box-sizing: border-box;
+          overflow: hidden; /* Prevents content from overflowing */
+          word-wrap: break-word; /* Ensures text wraps correctly */
+        }
+      
+        .box-content h2 {
+          margin-top: 0;
+          font-size: 18px;
+        }
+      
+        .box-content p {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+      
+        .button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      
+        .button a {
+          color: white;
+          text-decoration: none;
+        }
+        
+        .button:hover {
+          background-color: #0056b3;
+        }
+.title{
+    color: grey;
 }
 
 </style> 
@@ -161,61 +160,65 @@
 
 <h2 style="text-align: center; font-size: 30px;">SPORTS</h2> 
 
-<h3 style="font-family: Arial, Helvetica, sans-serif;">Indigenous Sports</h3>
-<div class="row1">
-  <div class="flex-container">
-    <div class="column">
+<h3 style="font-family: Arial, Helvetica, sans-serif;"><mark>Indigenous Sports</mark></h3>
+<div class="players_section">
+  <div class="box1">
+    <div class="box-content">
         <h3><b>Mukna(Manipuri Wrestling)</b></h3>
-         <button class="accordion"><img src="mukna.jpg" style="width: 100%;" alt="error"></button>
+         <button class="accordion"><div class="box-img1" style="background-image: url('mukna.jpg');"></div></button>
          <div class="panel">
          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mukna is a traditional form of wrestling that has been practiced in Manipur for centuries. It involves grappling techniques and is often performed during festivals and important cultural events. Wrestlers aim to throw their opponent to the ground using skillful techniques.</p>
          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Mukna , please visit the link <a href="https://en.wikipedia.org/wiki/Mukna">Click Here</a></p>
         </div>
     </div>
-    <div class="column">
+  </div>
+  <div class="box1">
+    <div class="box-content">
       <h3><b>Sagol-kangjei(Polo)</b></h3>
-      <button class="accordion"><img src="sagol_kangjei.jpg" style="width: 100%;" alt="error"></button>
+      <button class="accordion"><div class="box-img1" style="background-image: url('sagol_kangjei.jpg');"></div></button>
       <div class="panel">
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sagol Kangjei is believed to be one of the origins of modern polo. It is played with seven players on each team, riding Manipuri ponies. The game is fast-paced and requires a high level of skill in both riding and hitting the ball with a long-handled mallet.</p>
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Sagol kangjei , please visit the link <a href="https://simple.wikipedia.org/wiki/Sagol_Kangjei">Click Here</a></p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row1">
-  <div class="flex-container">
-    <div class="column">
+  <div class="box1">
+    <div class="box-content">
         <h3><b>Arambai Hunba (Manipuri Dart Throwing)</b></h3>
-         <button class="accordion"><img src="arambai-hunba.jpg" style="width: 100%;" alt="error"></button>
+         <button class="accordion"><div class="box-img1" style="background-image: url('arambai-hunba.jpg');"></div></button>
          <div class="panel">
          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This traditional sport involves the skillful throwing of arambai, which are dart-like weapons. It was historically used by Manipuri warriors. The sport requires precision and control.Arambai, literally meaning darts, is a simple weapon at first sight. The weapon has an iron arrow head, which is attached to feathers of peacocks though kites' feathers were also used in the past. Users of these weapons, who are horse riders, swirl the deadly poisoned darts and throw it to the enemy with an unparalleled accuracy and speed which is gathered through fast galloping of the Manipuri ponies.</p>
          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Arambai , please visit the link <a href="https://en.wikipedia.org/wiki/Arambai">Click Here</a></p>
         </div>
     </div>
-    <div class="column">
+  </div>
+
+  <div class="box1">
+    <div class="box-content">
       <h3><b>Yubi Lakpi (Manipuri Rugby)</b></h3>
-      <button class="accordion"><img src="yubi-lakpi.jpg" style="width: 100%;" alt="error"></button>
+      <button class="accordion"><div class="box-img" style="background-image: url('yubi-lakpi.jpg');"></div></button>
       <div class="panel">
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Yubi Lakpi, which translates to "coconut snatching," is a game similar to rugby but played with a coconut instead of a ball. The objective is to carry the coconut and touch the opponent's goal line. The game is played barefoot, and it emphasizes agility and strength.</p>
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Yubi-lakpi , please visit the link <a href="https://en.wikipedia.org/wiki/Yubi_lakpi">Click Here</a></p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row1">
-  <div class="flex-container">
-    <div class="column">
+  <div class="box1">
+    <div class="box-content">
         <h3><b>Thang Ta (Manipuri Martial Arts)</b></h3>
-         <button class="accordion"><img src="thang ta.jpg" style="width: 100%;" alt="error"></button>
+         <button class="accordion"><div class="box-img" style="background-image: url('thang\ ta.jpg');"></div></button>
         <div class="panel">
          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Thang Ta is a traditional martial art form that includes both armed and unarmed combat techniques. It involves the use of swords (thang) and spears (ta), as well as hand-to-hand combat techniques. Thang Ta is an integral part of the martial culture of the Meitei people.This aspect of Thang Ta involves unarmed combat techniques such as strikes, kicks, blocks, and grappling. It focuses on agility, speed, and the effective use of one's body to overcome opponents.Thang Ta includes various forms or sequences of movements (called "sajol"). These forms are practiced repeatedly to develop muscle memory and precision.</p>  
         </div>
     </div>  
-    <div class="column">
+  </div>
+
+  <div class="box1">
+    <div class="box-content">
       <h3><b>Hiyang Tannaba (Boat Racing)</b></h3>
-      <button class="accordion"><img src="hiyang-tanaba.jpg" style="width: 100%;" alt="error"></button>
+      <button class="accordion"><div class="box-img" style="background-image: url('hiyang-tanaba.jpg');"></div></button>
       <div class="panel">
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hiyang Tannaba is a traditional boat race held during the Lai Haraoba festival. The boats, known as hiyang, are beautifully decorated and rowed by a team of oarsmen. The race is a display of strength, coordination, and cultural heritage.</p>
       <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">For more intel on Hiyang-Tannaba , please visit the link <a href="https://en.wikipedia.org/wiki/Hiyang_Tannaba">Click Here</a></p>
@@ -229,179 +232,149 @@
 <p><b>There are various sports person from the meitei community who have contributed in the sports industry for Manipur and India in the National and International Platforms. Here are some of the sports person who have excelled in their respective field's :</b></p>
 
 <h3>Woman Section:</h3>
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="Kunjarani.jpg" alt="error" style="width:100%">
-      <div class="container">
-        <h2>Nameirakpam Kunjarani Devi</h2>
-        <p class="title">Weightlifter</p>
-        <p>Nameirakpam Kunjarani Devi was born 1 March, 1968.  She is noted weightlifter from the state of Manipur. She received the Arjuna award in 1990 and also shared the Rajiv Gandhi Khel Ratna award with Leander Paes for the year 1996-1997. She also won the K.K.Birla Sports award in the same year.</p>
-        <p><button class="button"><a href="https://en.wikipedia.org/wiki/Kunjarani_Devi">Know More</a></button></p>
-      </div>
+  <div class="players_section">
+    <div class="box">
+        <div class="box-img" style="background-image: url('Kunjarani.jpg');"></div>
+        <div class="box-content">
+            <h2>Nameirakpam Kunjarani Devi</h2>
+            <p class="title">Weightlifter</p>
+            <p>Nameirakpam Kunjarani Devi was born 1 March, 1968. She is a noted weightlifter from the state of Manipur. She received the Arjuna award in 1990 and also shared the Rajiv Gandhi Khel Ratna award with Leander Paes for the year 1996-1997. She also won the K.K.Birla Sports award in the same year.</p>
+            <p><button class="button"><a href="https://en.wikipedia.org/wiki/Kunjarani_Devi">Know More</a></button></p>
+        </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="Mirabai.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('Mirabai.jpg');"></div>
+      <div class="box-content">
         <h2>Saikhom Mirabai Chanu</h2>
         <p class="title">Weightlifter</p>
         <p>Saikhom Mirabai Chanu was born on 8 August 1994.  Mirabai Chanu is an Indian weightlifter who won silver medal in the women's 48 kg weight class at Commonwealth Games, 2014 at Glasgow.Mirabai Chanu lifted a total of 201 kg, winning the gold medal at the CWG 2022. She won the silver medal at the 2020 Tokyo Olympics in the Women's 49 kg category.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Saikhom_Mirabai_Chanu">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="Sanjita.jpg" alt="error" style="width:100%">
-      <div class="container">
+
+    <div class="box">
+        <div class="box-img" style="background-image: url('Sanjita.jpg');"></div>
+      <div class="box-content">
         <h2>Khumukcham Sanjita Chanu</h2>
         <p class="title">Weightlifter</p>
         <p>Khumukcham Sanjita Chanu was born on 2nd January 1994. She is an Indian weightlifter who won gold medal in the women's 48 kg weight class at the Commonwealth Games , 2014  at Glasgow</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Khumukcham_Sanjita_Chanu">Know More</a></button></p>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="Sarita.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box"><div class="box-img" style="background-image: url('Sarita.jpg');"></div>
+      <div class="box-content">
         <h2>Laishram Sarita Devi</h2>
         <p class="title">Indian professional boxer</p>
-      <p>Laishram Sarita Devi is an Indian boxer from Manipur. She is a national champion and a former world champion in the lightweight class. In 2009, she was awarded Arjuna award by the government of India for her achievement</p>
+        <p>Laishram Sarita Devi is an Indian boxer from Manipur. She is a national champion and a former world champion in the lightweight class. In 2009, she was awarded Arjuna award by the government of India for her achievement</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Laishram_Sarita_Devi">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="sarjubala.jpg" alt="error" style="width:100%">
-      <div class="container">
+
+    <div class="box">
+      <div class="box-img" style="background-image: url('sarjubala.jpg');"></div>
+      <div class="box-content">
         <h2>Samjetsabam Sarjubala Devi</h2>
         <p class="title">Indian professional boxer</p>
         <p>Samjetsabam Sarjubala Devi is an Indian woman boxer from Manipur and represented India at the 2016 Rio Olympics. After being awarded as the Best Boxer at Youth World Women Boxing Championship organised at Turkey, the Olympic Gold Quest announced support for Sarjubala Devi in 2012.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sarjubala_Devi">Know More</a></button></p>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="sushila.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+        <div class="box-img" style="background-image: url('sushila.jpg');"></div>
+      <div class="box-content">
         <h2>Pukhrambam Sushila Chanu</h2>
         <p class="title">Hockey Player</p>
         <p>Sushila Chanu Pukhrambam is an Indian field hockey player. A former captain of Indian national team, she has over 150 international caps to her credit. Born in Imphal, Manipur, Chanu began playing hockey at the age of eleven, and was soon selected for the national camp. She was awarded Arjuna Award for year 2023.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sushila_Chanu">Know More</a></button></p>
       </div>
     </div>
-  </div>
-
-  <div class="person">
-    <div class="card">
-      <img src="sanggai.jpg" alt="error" style="width:100%">
-      <div class="container">
+  
+    <div class="box">
+      <div class="box-img" style="background-image: url('sanggai.jpg');"></div>
+      <div class="box-content">
         <h2>Sanggai Ibemhal Chanu Maimom</h2>
         <p class="title">Hockey player</p>
         <p>Sanggai Ibemhal Chanu Maimom is a female field hockey player from India, who made her international debut for her native country in April 1998 in a friendly against Germany. She played as a midfielder or as a centre forward. At the 2001 World Cup Qualifier she was named Young Player of the Tournament.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Sanggai_Chanu">Know More</a></button></p>
       </div>
     </div>
-  </div>
+  
 
-  <div class="person">
-    <div class="card">
-      <img src="bichu.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('bichu.jpg');"></div>
+      <div class="box-content">
         <h2>Kharibam Bichu Devi</h2>
         <p class="title">Hockey Player</p>
         <p>Bichu Devi Kharibam is a field hockey player and member of Indian women's hockey team. She hails from Manipur. She plays for Indian Oil Corporation Limited in the domestic hockey tournaments. She is a goalkeeper.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Bichu_Devi_Kharibam">Know More</a></button></p>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="panthoi.jpg" alt="error" style="width:100%">
-      <div class="container">
+  
+  <div class="box">
+      <div class="box-img" style="background-image: url('panthoi.jpg');"></div>
+      <div class="box-content">
         <h2>Elangbam Panthoi Chanu</h2>
         <p class="title">Indian footballer</p>
         <p>Elangbam Panthoi Chanu is an Indian professional footballer who plays as a goalkeeper for the South Australia WNPL club Metro United WFC and India women's football team.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Elangbam_Panthoi_Chanu">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="bala.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('bala.jpg');"></div>
+      <div class="box-content">
         <h2>Ngangom Bala Devi</h2>
         <p class="title">Indian footballer</p>
         <p>Ngangom Bala Devi (born 2 February 1990) is an Indian professional footballer who plays as a forward for the club Manipur Police and the India national team.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Bala_Devi">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="ashalata.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('ashalata.jpg');"></div>
+      <div class="box-content">
         <h2>Loitongbam Ashalata Devi</h2>
         <p class="title">Indian footballer</p>
         <p>Loitongbam Ashalata Devi, known as Ashalata Devi, is an Indian professional footballer who plays as a defender for the Indian Women's League club Gokulam Kerala and captains the India women's national team. Devi is considered one of the finest defenders from Asia.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Loitongbam_Ashalata_Devi">Know More</a></button></p>
       </div>
     </div>
-  </div>
 </div>
 
 <hr>
 <hr>
 
 <h2>Men's Section</h2>
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="devendro.jpg" alt="error" style="width:100%">
-      <div class="container">
+  <div class="players_section">
+    <div class="box">
+      <div class="box-img" style="background-image: url('devendro.jpg');"></div>
+      <div class="box-content">
         <h2>Laishram Devendro Singh</h2>
         <p class="title">Indian boxer</p>
         <p>Devendro Singh Laishram, also known as Devendro Singh or Devendro Laishram, is an Indian boxer from Imphal West district, Manipur who competes in the light-flyweight division.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Devendro_Singh">Know More</a></button></p>
       </div>
     </div>
-  </div>
-
-  <div class="person">
-    <div class="card">
-      <img src="dingko.jpg" alt="error" style="width:100%">
-      <div class="container">
+  
+    <div class="box">
+      <div class="box-img" style="background-image: url('dingko.jpg');"></div>
+      <div class="box-content">
         <h2>Ngangom Dingko Singh</h2>
         <p class="title">Indian Boxer</p>
         <p>Ngangom Dingko Singh, commonly known as 'Dingko Singh' was an Indian boxer. He is considered to have been one of the most outstanding boxers India ever produced. He won the King's Cup in Bangkok in 1997 and the Asian Games gold in the 1998 Bangkok Games. He was a service personnel of the Indian Navy.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Dingko_Singh">Know More</a></button></p>
       </div>
     </div>
-  </div>
+ 
 
-  <div class="person">
-    <div class="card">
-      <img src="nanao.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('nanao.jpg');"></div>
+      <div class="box-content">
         <h2>Thokchom Nanao Singh</h2>
         <p class="title">Indian Boxer</p>
         <p>Thokchom Nanao Singh (born 8 January 1991) is an Indian boxer from Khoijuman Maning Leikai village in Bishnupur district of Manipur.[1] He trains at Pune-based Army Sports Institute and is supported by Olympic Gold Quest, a not-for-profit foundation to identify and support Indian athletes.</p>
@@ -409,37 +382,33 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="chinglensana.jpg" alt="error" style="width:100%">
-      <div class="container">
+  <div class="players_section">
+    <div class="box">
+      <div class="box-img" style="background-image: url('chinglensana.jpg');"></div>
+      <div class="box-content">
         <h2>Konsham Chinglensana Singh</h2>
         <p class="title">Indian footballer</p>
         <p>Chinglensana Singh Konsham (born 23 November 1996), simply Sana Singh, is an Indian professional footballer who plays as a centre-back for Indian Super League club Bengaluru and the India national team</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Chinglensana_Singh_(footballer)">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="dheeraj.jpg" alt="error" style="width:100%">
-      <div class="container">
+
+    <div class="box">
+      <div class="box-img" style="background-image: url('dheeraj.jpg');"></div>
+      <div class="box-content">
         <h2>Moirangthem Dheeraj Singh</h2>
         <p class="title">Indian footballer</p>
         <p>Dheeraj Singh Moirangthem (born 4 July 2000), is an Indian professional footballer who plays as a goalkeeper. He gained fame for his performance at the 2017 FIFA U-17 World Cup</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Dheeraj_Singh">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="jeakson.jpg" alt="error" style="width:100%">
-      <div class="container">
+
+    <div class="box">
+      <div class="box-img" style="background-image: url('jeakson.jpg');"></div>
+      <div class="box-content">
         <h2>Thounaojam Jeakson Singh</h2>
         <p class="title">Indian footballer</p>
         <p>Jeakson Singh Thounaojam (born 21 June 2001) is an Indian professional footballer who plays as a defensive midfielder for Indian Super League club Kerala Blasters and the India national team.</p>
@@ -447,37 +416,33 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="person">
-    <div class="card">
-      <img src="kothajit.jpg" alt="error" style="width:100%">
-      <div class="container">
+  <div class="players_section">
+    <div class="box">
+      <div class="box-img" style="background-image: url('kothajit.jpg');"></div>
+      <div class="box-content">
         <h2>Khadangbam Kothajit Singh</h2>
         <p class="title">Indian Hockey Player</p>
         <p>Khadangbam Kothajit Singh (born 17 August 1992) is an India field hockey player who plays as a defender or midfielder for the Indian national team.He represented India in Men's Hockey during the 2012 London Olympics. He is the third hockey Olympian, after Pangambam Nilakomol Singh and Ksh.Thoiba from the state of Manipur.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Khadangbam_Kothajit_Singh">Know More</a></button></p>
       </div>
     </div>
-  </div>
+  
 
-  <div class="person">
-    <div class="card">
-      <img src="Nilakanta.jpg" alt="error" style="width:100%">
-      <div class="container">
+    <div class="box">
+      <div class="box-img" style="background-image: url('Nilakanta.jpg');"></div>
+      <div class="box-content">
         <h2>Shanglakpam Nilakanta Sharma</h2>
         <p class="title">Indian Hockey Player</p>
         <p>Shanglakpam Nilakanta Sharma is an Indian field hockey player who plays as a midfielder for the Indian national team. He was part of the Indian squad that won the 2016 Men's Hockey Junior World Cup. And Finally he won gold medal in 2022 Asian Games in Hangzhou.</p>
         <p><button class="button"><a href="https://en.wikipedia.org/wiki/Nilakanta_Sharma">Know More</a></button></p>
       </div>
     </div>
-  </div>
 
-  <div class="person">
-    <div class="card">
-      <img src="chinglensana_k.jpg" alt="error" style="width:100%">
-      <div class="container">
+
+    <div class="box">
+      <div class="box-img" style="background-image: url('chinglensana_k.jpg');"></div>
+      <div class="box-content">
         <h2>Kangujam Chinglensana Singh</h2>
         <p class="title">Indian Hockey Player</p>
         <p>Chinglensana Singh Kangujam is an Indian field hockey player who plays as a halfback. He made his debut in the Indian team in 2012, and plays for Dabang Mumbai in the Hockey India League.</p>
@@ -485,7 +450,6 @@
       </div>
     </div>
   </div>
-</div>
 
 <script>
   var acc = document.getElementsByClassName("accordion");
@@ -518,9 +482,9 @@
       <div class="footer-section social">
           <h3>Follow Us</h3>
           <div class="social-icons">
-              <a href="https://www.facebook.com/martin.hmz.3"><img src="facebook-icon.png" alt="Facebook"></a>
-              <a href="https://x.com/HemamBoina54707"><img src="twitter-icon.png" alt="Twitter"></a>
-              <a href="https://www.instagram.com/boinaohemam/"><img src="instagram-icon.jpg" alt="Instagram"></a>
+              <a href="https://www.facebook.com/martin.hmz.3"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/HemamBoina54707"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/boinaohemam/"><i class="fa-brands fa-instagram"></i></a>
           </div>
       </div>
   </div>
