@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 24%;
+    padding: 5px;
+    
+  }
+  
+  .flex-container {
+    display: flex;
+    flex: 23%;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      flex: 49.99%;
+    }
+  }
+    
