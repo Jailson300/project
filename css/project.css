@@ -120,4 +120,7 @@ ul {
       }
   }
 
-  
+  .responsive{
+    width: 100%;
+    height: 25vh;
+  }
