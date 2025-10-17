@@ -3,11 +3,19 @@
      }
 body {
 font-family: Verdana, sans-serif;
+background-color: beige;
+padding: 10px;
 }
 
-body {
-background-color: beige;
+p{
+  text-align: justify;
+  font-size: 1.3rem;
 }
+
+h2{
+  text-align: center;
+}
+
 
 .mySlides {
 display: none;
@@ -80,4 +88,26 @@ opacity: 1;
 .text {
 font-size: 11px;
 }
+}
+
+.container{
+  margin: 10px;
+  padding: 10px;
+}
+
+.card{
+  display: flex;
+}
+
+.image,.text{
+  width: 50%;
+  padding: 10px;
+}
+
+
+
+.image img{
+  width: 100%;
+  height: 350px;
+  padding-left: 30px;
 }
