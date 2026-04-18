@@ -1,187 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOME</title>
-<link rel="icon" type="image/png" href="/assets/logo.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="stylesheet" href="/css/project.css">
-<link rel="stylesheet" href="/css/home.css">
-
- </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meitei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
 <body>
 
-  <img src="/assets/Salai_Taret_Flag.svg.png" alt="Flag" class="responsive">
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="/Html/Home.html">HOME</a></li>
+            <li><a href="/Html/About.html">ABOUT</a></li>
+            <li><a href="/Html/Cuisine.html">CUISINE</a></li>
+            <li><a href="/Html/Culture.html">CULTURE</a></li>
+            <li><a href="/Html/Festivals.html">FESTIVALS</a></li>
+            <li><a href="/Html/Historical_sites.html">HISTORICAL SITES</a></li>
+            <li><a href="/Html/Sports.html" >SPORTS</a>
+            <li><a href="/Html/Gallery.html">GALLERY</a></li>
+            <li><a href="/Html/Contact.html">CONTACT</a></li> 
+        </ul>
+    </nav>
 
-<ul>
-  <li><a href="/Html/Home.html" target="_blank">HOME</a></li>
-  <li><a href="/Html/About.html" target="_blank">ABOUT</a></li>
- <li><a href="/Html/Cuisine.html" target="_blank">CUISINE</a></li>
-<li><a href="/Html/Culture.html" target="_blank">CULTURE</a></li>
- <li><a href="/Html/Festivals.html" target="_blank">FESTIVALS</a></li>
- <li><a href="/Html/Historical_sites.html" target="_blank">HISTORICAL SITES</a></li>
- <li><a href="/Html/Sports.html"  target="_blank">SPORTS</a>
-<li><a href="/Html/Gallery.html">GALLERY</a></li>
-<li><a href="/Html/Contact.html">CONTACT</a></li>
- </li>
-</ul>
-<br>
- <div class="slideshow-container">
+    <section id="home">
+        <h1 class="reveal fade-up">Welcome to the vibrant world of Meitei !</h1>
+        <p class="reveal fade-up delay-1">Explore and Experience the world of Meitei right at your fingertips.</p>
+        <a href="#menu" class="btn reveal fade-up delay-2">EXPLORE PLACES</a>
+    </section>
 
+    <section id="about">
+        <div style="display: flex; align-items: center; gap: 80px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 350px;" class="reveal fade-left">
+                <img src="./image1.jpeg" style="width: 100%; border-radius: 2px;" alt="Interior">
+            </div>
+            <div style="flex: 1; min-width: 350px;" class="reveal fade-right">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">Introduction</h2>
+                <p style="margin-bottom: 20px; font-size: 1.1rem;" class="text-content" id="text">The Meitei tribe is renowned for its deep-rooted traditions, which are intricately woven into the fabric of daily life. Central to these is Sanamahism, the indigenous religion of the Meitei people, which honors the elements of nature and the ancestors. The tribe celebrates numerous festivals, with Lai Haraoba being the most significant, a grand event that pays homage to the deities and retells the creation of the universe through dance, music, and rituals.The Meitei language, or Meiteilon, is one of the oldest languages in India and is recognized for its rich literary heritage. The tribe's oral traditions, poetry, and classical texts are cherished treasures, reflecting the wisdom and creativity of the Meitei people. The traditional script, Meitei Mayek, has seen a revival in recent years, symbolizing the tribe's commitment to preserving its cultural identity.The Meitei tribe is celebrated for its exceptional artistry, particularly in weaving and handicrafts. The traditional attire, such as Phanek and Innaphi, showcases intricate designs and vibrant colors, reflecting the skill and aesthetic sensibilities of Meitei artisans. Pung Cholom, the drum dance, and the classical dance form Ras Leela are world-renowned, capturing the essence of Meitei spirituality and cultural expression.</p>
+                
+                <button class="btn"  onclick="toggleReadMore()" id="toggleBtn">Read More</button>
+            </div>
+        </div>
+    </section>
 
- <div class="mySlides fade">
- <div class="numbertext">1 / 5</div>
- <img src="/assets/image1.jpeg" style="width: 100%; height: 380px;" />
- </div>
+    <section id="services" style="background: #b3b4bd;">
+        <div class="container">
+            <h2 class="reveal fade-up" style="text-align: center; font-size: 3rem;">Know More About Meitei</h2>
+            <div class="grid">
+                <div class="service-card one reveal fade-up">
+                    <h3>Origin & History</h3>
+                    <p>The Origin of Meitei dates back to upto 3000 years, making it one of the oldest tribe around the world.They have a long history of Bravery , Resilent and Pride.</p>
+                </div>
+                <div class="service-card two reveal fade-up delay-1">
+                    <h3>Culture & Tradition</h3>
+                    <p>Meitei has its own unique culture and tradition, mostly revolving around celebrating life , respect for old & youngs.</p>
+                </div>
+                <div class="service-card three reveal fade-up delay-2">
+                    <h3>Langugae and Literature</h3>
+                    <p>The Meitei have one of the world oldest script known as 'Meitei mayek' and its own scripture known as 'Puya'.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <div class="mySlides fade">
- <div class="numbertext">2 / 5</div>
- <img src="/assets/image2.jpg" style="width: 100%; height: 350px;" />
- </div>
+    <section id="menu" style="padding: 0;">
+        <h2 class="reveal fade-up" style="font-size: 3rem;padding: 1em;margin-top: 1em;">Explore</h2>
+        <div class="gallery-grid">
+            <img class="reveal fade-up" src="./IMA_MARKET.webp" alt="Food 1">
+            <img class="reveal fade-up delay-1" src="./KHONGJOM-WAR-MEMORIAL.png" alt="Food 2">
+            <img class="reveal fade-up delay-2" src="./kangla.jpg" alt="Food 3">
+            <img class="reveal fade-up delay-1" src="./SHAHEED-MINAR.png" alt="Food 4">
+        </div>
+    </section>
 
-<div class="mySlides fade">
- <div class="numbertext">3 / 5</div>
-<img src="/assets/image3.jpg" style="width: 100%; height: 350px;" />
- </div>
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">LUMINA</div>
+                <p>Bringing the finest culinary experiences to your table. Join us for a night of unforgettable taste and elegance.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home" style="color: inherit; text-decoration: none;">Home</a></li>
+                    <li><a href="#about" style="color: inherit; text-decoration: none;">About Us</a></li>
+                    <li><a href="#menu" style="color: inherit; text-decoration: none;">Menu</a></li>
+                    <li><a href="#services" style="color: inherit; text-decoration: none;">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>hello@lumina.com</p>
+                <p>+1 (555) 000-1234</p>
+                <p>New York, NY 10001</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Mon - Fri: 5pm - 11pm</p>
+                <p>Sat - Sun: 12pm - 12am</p>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #1e293b; padding-top: 30px; font-size: 0.8rem; color: #4b5563;">
+            &copy; 2026 Lumina Dining Experience. All rights reserved.
+        </div>
+    </footer>
 
-<div class="mySlides fade">
- <div class="numbertext">4 / 5</div>
- <img src="/assets/image4.jpg" style="width: 100%;height: 350px;" />
-</div>
+    <script>
+        // 1. Intersection Observer for Scroll Reveals
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
 
- <div class="mySlides fade">
- <div class="numbertext">5 / 5</div>
- <img src="/assets/image5.jpg" style="width: 100%;height: 350px;" />
- </div>
- </div>
-<br />
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
- <div style="text-align: center">
- <span class="dot"></span>
-<span class="dot"></span>
- <span class="dot"></span>
- <span class="dot"></span>
-<span class="dot"></span>
- </div>
+        // 2. Navbar Styling on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
 
+        function toggleReadMore() {
+          const text = document.getElementById("text");
+          const btn = document.getElementById("toggleBtn");
 
-     <div class="container">
-<div class="card">
-  <div class="image"><img src="/assets/image1.jpeg" alt="error"></div>
-  <div class="text">
- <h2> MEITEI/MEETEI</h2>
- <p>
-  Welcome to the vibrant world of the Meitei tribe, the indigenous people of the lush valleys of Manipur, India. Steeped in a rich tapestry of history, culture, and tradition, the Meitei community stands as a testament to the enduring spirit of its people. For centuries, the Meiteis have preserved their unique way of life, blending ancient customs with the rhythms of modernity.
-</p>
-  </div>
-</div>
+          text.classList.toggle("expanded");
 
-
-<div class="card">
-  <div class="text">
-<h2>A Heritage of Rich Traditions</h2>
-<p>The Meitei tribe is renowned for its deep-rooted traditions, which are intricately woven into the fabric of daily life. Central to these is Sanamahism, the indigenous religion of the Meitei people, which honors the elements of nature and the ancestors. The tribe celebrates numerous festivals, with Lai Haraoba being the most significant, a grand event that pays homage to the deities and retells the creation of the universe through dance, music, and rituals.</p>
-  </div>
-<div class="image"><img src="/assets/image2.jpg" alt="error"></div>
-</div>
-
-<div class="card">
-  <div class="image"><img src="/assets/image3.jpg" alt="error"></div>
-
-<div class="text">
-  <h2>Language and Literature</h2>
-<p>
-  The Meitei language, or Meiteilon, is one of the oldest languages in India and is recognized for its rich literary heritage. The tribe's oral traditions, poetry, and classical texts are cherished treasures, reflecting the wisdom and creativity of the Meitei people. The traditional script, Meitei Mayek, has seen a revival in recent years, symbolizing the tribe's commitment to preserving its cultural identity.
-  </p>
-</div>
-</div>
-
-<div class="card">
-  <div class="text">
-<h2>Arts and Crafts</h2>
-<p>
-  The Meitei tribe is celebrated for its exceptional artistry, particularly in weaving and handicrafts. The traditional attire, such as Phanek and Innaphi, showcases intricate designs and vibrant colors, reflecting the skill and aesthetic sensibilities of Meitei artisans. Pung Cholom, the drum dance, and the classical dance form Ras Leela are world-renowned, capturing the essence of Meitei spirituality and cultural expression.
-  </p>
-  </div>
-  <div class="image"><img src="/assets/image4.jpg" alt="error"></div>
-</div>
-
-<div class="card">
-  <div class="image"><img src="/assets/arambai-hunba.jpg" alt="error"></div>
-
-<div class="text">
-  <h2>A Community of Warriors and Scholars</h2>
-<p>
-  Historically, the Meitei people have been known for their valor and wisdom. The tribe's history is marked by legendary warriors who defended their homeland with unmatched courage. Equally, the Meiteis have made significant contributions to the fields of education, sports, and literature, with many individuals gaining national and international recognition.  </p>
-</div>
-</div>
-
-<div class="card">
-  <div class="text">
-<h2>A Glimpse into the Meitei Way of Life</h2>
- <p>
-  The Meitei tribe's customs and social structures are deeply rooted in respect for nature and community values. Family bonds are strong, with rituals and ceremonies playing a vital role in the life of a Meitei. From birth to marriage, and eventually to the last rites, every stage of life is celebrated with rituals that connect the people to their ancestors and the divine.
-   </p>
-</div>
-   <div class="image"><img src="/assets/NUPI-JAGOI.jpeg" alt="error"></div>
-
-</div>
-    </div>
-
-   <p>
-    Join us in exploring the rich cultural heritage of the Meitei tribe, where tradition meets modernity, and where the past continues to inspire the future. Discover the vibrant festivals, the intricate arts, the profound spiritual practices, and the stories of a people who have stood the test of time. Welcome to the world of the Meiteis—a journey into the heart of Manipur's soul.
-     </p>
-<br>
-
-<footer>
-  <div class="footer-container">
-      <div class="footer-section creator">
-          <h3>Creator</h3>
-          <p>Designed and developed by Boinao Hemam</p>
-      </div>
-      <div class="footer-section contact">
-          <h3>Contact Info</h3>
-          <p>Email: boinaohemam@gmail.com</p>
-          <p>Phone: +91 7640859288</p>
-      </div>
-      <div class="footer-section social">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/martin.hmz.3"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/HemamBoina54707"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/boinaohemam/"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="footer-bottom">
-      <p>&copy; 2024 Boinao Hemam. All rights reserved.</p>
-  </div>
-</footer>
-
- <script>
-
- var slideIndex = 0;
- showSlides();
-
-function showSlides() {
- var i;
- var slides = document.getElementsByClassName("mySlides");
- var dots = document.getElementsByClassName("dot");
- for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none"; 
- }
- slideIndex++;
- if (slideIndex > slides.length) {slideIndex = 1} 
- for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
- }
- slides[slideIndex-1].style.display = "block"; 
- dots[slideIndex-1].className += " active";
- setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
- </script>
- </body>
+          if (text.classList.contains("expanded")) {
+              btn.innerHTML = "Read Less";
+          } else {
+              btn.innerHTML = "Read More";
+          }
+        }
+    </script>
+</body>
 </html>
-
