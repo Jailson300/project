@@ -93,7 +93,7 @@ section { padding: 120px 10%; }
 .btn:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
 
 .text-content {
-max-height: 15em; /* Shows about 2 lines of text */
+max-height: 15em; 
 overflow: hidden;
 transition: max-height 0.3s ease; /* Smooth opening animation */
 }
