@@ -120,21 +120,21 @@ max-height: 1000px; /* Large enough to fit all text */
 
 .one{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-  url('/assets/images');
+  url('/assets/images.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .two{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-  url('./image1.jpeg');
+  url('/assets/THOUGAL-JAGOI.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .three{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-  url('./puya.jpg');
+  url('/assets/Puya.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -147,6 +147,7 @@ max-height: 1000px; /* Large enough to fit all text */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  padding-bottom: 2rem;
 }
 .gallery-grid img { width: 100%; height: 250px; object-fit: cover; filter: grayscale(30%); transition: 0.5s; }
 .gallery-grid img:hover { filter: grayscale(0%); transform: scale(1.02); }
