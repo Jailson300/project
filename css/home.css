@@ -68,7 +68,7 @@ section { padding: 120px 10%; }
 #home {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-              url('./images.jpg');
+              url('/assets/Salai_Taret_Flag.svg.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -120,7 +120,7 @@ max-height: 1000px; /* Large enough to fit all text */
 
 .one{
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-  url('./images.jpg');
+  url('/assets/images');
   background-size: cover;
   background-position: center;
 }
