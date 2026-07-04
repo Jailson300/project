@@ -76,17 +76,15 @@
 
   #qoute{
     height: 20vh;
-    margin: 2.5rem 0;
   }
 
   #qoute .card{
-    height: 100%;
     background-color: rgba(255,255,255,0.08);
     padding: 2rem;
     margin: 1.2rem;
     border: 0.02rem solid rgba(255,255,255,0.15);
     border-radius: 1rem;
-    color: #F9FAFB;
+    color: var(--gold);
     text-align: center;
     justify-content: center;
     font-size: 2.5rem;
