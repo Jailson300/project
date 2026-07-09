@@ -28,13 +28,13 @@ body {
   border-radius: 1rem;
 }
 
-.container{
+#staple .container{
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.card{
+#staple .card{
   width: 48%;
   height: 30vh;
   padding: 5vh;
@@ -42,8 +42,32 @@ body {
   font-size: 1.2rem;
 }
 
-.card img{
+#staple .card img{
   width: 80%;
   height: 100%;
   padding-left: 17vh;
+}
+
+#popular .container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#popular .card{
+  background-color: #d5e0d5;
+  padding: 5vh;
+  height: 60vh;
+  color: black;
+  margin: 5vh;
+}
+
+#popular .card img{
+  width: 30vh;
+  height: 20vh;
+}
+
+#popular .card h2{
+  color: #757875;
+  text-align: center;
+  font-size: 1.5rem;
 }
