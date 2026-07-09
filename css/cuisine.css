@@ -70,4 +70,11 @@ body {
   color: #757875;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 1vh;
+}
+
+#popular p{
+  font-size: 0.85rem;
+  text-wrap: wrap;
+  margin-top: 2vh;
 }
