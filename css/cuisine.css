@@ -78,3 +78,41 @@ body {
   text-wrap: wrap;
   margin-top: 2vh;
 }
+
+#unique{
+  background-color: #d5e0d5;
+}
+
+#unique .container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#unique .card h2{
+  color: #757875;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1vh;
+}
+
+#unique .card{
+  width: 40vh;
+  background-color: #c8d1c8;
+  padding: 5vh;
+  height: 60vh;
+  color: black;
+  margin: 5vh;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+}
+
+#unique .card img{
+  width: 30vh;
+  height: 20vh;
+}
+
+#unique p{
+  font-size: 0.85rem;
+  text-wrap: wrap;
+  margin-top: 2vh;
+}
