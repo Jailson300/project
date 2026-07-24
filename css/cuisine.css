@@ -54,29 +54,31 @@ body {
 }
 
 #popular .card{
+  width: 40vh;
   background-color: #d5e0d5;
-  padding: 5vh;
   height: 60vh;
   color: black;
   margin: 5vh;
+  border-radius: 1.8rem;
 }
 
 #popular .card img{
-  width: 30vh;
-  height: 20vh;
+  width: 40vh;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 1.8rem 1.8rem 0 0;
 }
 
 #popular .card h2{
-  color: #757875;
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1vh;
 }
 
 #popular p{
-  font-size: 0.85rem;
+  font-size: 0.87rem;
   text-wrap: wrap;
-  margin-top: 2vh;
+  margin: 2vh;
 }
 
 #unique{
@@ -89,7 +91,7 @@ body {
 }
 
 #unique .card h2{
-  color: #757875;
+
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1vh;
@@ -98,24 +100,26 @@ body {
 #unique .card{
   width: 40vh;
   background-color: #c8d1c8;
-  padding: 5vh;
   height: 60vh;
   color: black;
   margin: 5vh;
-  border-radius: 0.8rem;
+  border-radius: 1.8rem;
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
 }
 
 #unique .card img{
-  width: 30vh;
-  height: 20vh;
+  width:100%;
+  height:40%;
+  object-fit:cover;
+  border-radius: 1.8rem 1.8rem 0 0;
 }
 
 #unique p{
   font-size: 0.85rem;
   text-wrap: wrap;
-  margin-top: 2vh;
+  margin: 2vh;
 }
+
 
 .hidden{
   display: none;
