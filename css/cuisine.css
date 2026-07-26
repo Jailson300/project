@@ -24,7 +24,7 @@ body {
 
 #staple{
   margin: 2vh 4vh;
-  background-color: #7fa676;
+  background-color: #C7D3C0;
   border-radius: 1rem;
 }
 
@@ -40,6 +40,7 @@ body {
   padding: 5vh;
   align-items: center;
   font-size: 1.2rem;
+  color: black;
 }
 
 #staple .card img{
