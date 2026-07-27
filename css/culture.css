@@ -172,31 +172,36 @@ font-size:1rem;
   height: 8vh;
 }
 
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 24%;
-    padding: 5px;
-    
-  }
-  
-  .flex-container {
-    display: flex;
-    flex: 23%;
-    flex-direction: row;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 5px;
-  }
-  
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-      flex: 49.99%;
-    }
-  }
+#dance{
+  display: flex;
+}
+
+#dance .card{
+  width: 40vh;
+  background-color: #d5e0d5;
+  height: 60vh;
+  color: black;
+  margin: 5vh;
+  border-radius: 1.8rem;
+}
+
+#dance .card img{
+  width: 40vh;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 1.8rem 1.8rem 0 0;
+}
+
+#dance .card h2{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1vh;
+}
+
+#dance p{
+  font-size: 0.87rem;
+  text-wrap: wrap;
+  margin: 2vh;
+}
     
 
