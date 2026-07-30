@@ -172,11 +172,11 @@ font-size:1rem;
   height: 8vh;
 }
 
-#dance{
+#container{
   display: flex;
 }
 
-#dance .card{
+#container .card{
   width: 40vh;
   background-color: #d5e0d5;
   height: 60vh;
@@ -185,20 +185,53 @@ font-size:1rem;
   border-radius: 1.8rem;
 }
 
-#dance .card img{
+#container .card img{
   width: 40vh;
   height: 40%;
   object-fit: cover;
   border-radius: 1.8rem 1.8rem 0 0;
 }
 
-#dance .card h2{
+#container .card h2{
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1vh;
 }
 
-#dance p{
+#container p{
+  font-size: 0.87rem;
+  text-wrap: wrap;
+  margin: 2vh;
+}
+
+#tradi{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tradi .card{
+  width: 40vh;
+  background-color: #d5e0d5;
+  height: 70vh;
+  color: black;
+  margin: 3vh;
+  border-radius: 1.8rem;
+}
+
+#tradi .card img{
+  width: 40vh;
+  height: 45%;
+  object-fit: contain;
+  border-radius: 1.8rem 1.8rem 0 0;
+}
+
+#tradi .card h2{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1vh;
+}
+
+#tradi p{
   font-size: 0.87rem;
   text-wrap: wrap;
   margin: 2vh;
