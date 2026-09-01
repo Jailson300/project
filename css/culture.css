@@ -165,6 +165,7 @@ body {
 
 #container1 {
   display: flex;
+  height: 50vh;
 }
 
 
@@ -251,7 +252,64 @@ body {
 
   display: flex;
 
-  background: #17131d;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("/assets/PENA.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.4s;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  margin: 5vh;
+}
+
+.culture-card2{
+  width: 60vh;
+
+  display: flex;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("/assets/meitei_bride.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.4s;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  margin: 5vh;
+}
+
+.culture-card3{
+  width: 60vh;
+
+  display: flex;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("/assets/Nat_sanktrita.jpg");
+
+    background-size: cover;
+
+    background-position: center;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -314,7 +372,7 @@ body {
   inset: 0;
 
   background: linear-gradient(
-    to right,
+    to top,
 
     rgba(18, 15, 22, 0.95),
     rgba(18, 15, 22, 0.15),
@@ -369,4 +427,82 @@ body {
 
 .card-content a:hover {
   gap: 15px;
+}
+
+.card-content1 {
+  padding: 5vh;
+
+  width: 60%;
+}
+
+.card-content1 h1 {
+  color: white;
+
+  font-size: 2.3rem;
+
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+}
+
+.card-content1 h4 {
+  color: #d7b168;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.card-content1 p {
+  color: #c6c6c6;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+.card-content1 a {
+  color: #d7b168;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  display: inline-flex;
+
+  gap: 8px;
+
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.card-content1 a:hover {
+  gap: 15px;
+}
+
+
+#message{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("/assets/image5.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.card1{
+ width: 70vh;
+ font-size: 1.2rem;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.card1 p{
+  text-align: center;
+  color: #d7b168;
 }
