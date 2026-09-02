@@ -143,6 +143,18 @@ body {
   height: 8vh;
 }
 
+h1{
+  margin: 2.5rem 0 0 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d7b168;
+}
+
+hr{
+  width: 80%;
+  margin-left: 10rem;
+}
+
 #container {
   display: flex;
 }
@@ -483,7 +495,9 @@ body {
 
 #message{
   display: flex;
+  height: 50vh;
   justify-content: center;
+  align-items: center;
   margin: 1rem;
   border-radius: 1.5rem;
   padding: 2rem;
