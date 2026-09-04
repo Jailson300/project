@@ -265,6 +265,14 @@ hr{
   transform: scale(1.08);
 }
 
+#Tradi .culture-card a{
+  margin-top: 1rem;
+}
+
+#Tradi .culture-card h4{
+  margin: 1rem;
+}
+
 .culture-card {
   width: 40vh;
 
