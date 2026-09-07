@@ -40,7 +40,6 @@ body {
   .players_section{
           display: flex;
           justify-content: space-evenly;
-          background-color: #e2e7e2;
       }
 
       .container{
@@ -48,26 +47,122 @@ body {
         display: flex;
         justify-content: space-around;
       }
+
+      #container{
+        display: flex;
+      }
+
+      .culture-card {
+        width: 40vh;
+      
+        background: #17131d;
+      
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      
+        border-radius: 20px;
+      
+        overflow: hidden;
+      
+        transition: 0.4s;
+      
+        cursor: pointer;
+      
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        margin: 5vh;
+      }
+
+      .card-image {
+        position: relative;
+        height: 45%;
+        overflow: hidden;
+      }
+      
+      .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+        transition: 0.5s;
+      }
+
+      .culture-card1:hover img {
+        transform: scale(1.08);
+      }
+      
+      .overlay {
+        position: absolute;
+      
+        inset: 0;
+      
+        background: linear-gradient(
+          to top,
+      
+          rgba(18, 15, 22, 0.95),
+          rgba(18, 15, 22, 0.15),
+          transparent
+        );
+      }
+      
+      
+      .card-content {
+        padding: 5vh
+      }
+      
+      .card-content h2 {
+        color: white;
+      
+        font-size: 28px;
+      
+        font-family: "Cormorant Garamond", serif;
+      }
+      
+      .card-content h4 {
+        color: #d7b168;
+      
+        font-size: 15px;
+      
+        font-weight: 500;
+      }
+      
+      .card-content p {
+        color: #c6c6c6;
+      
+        line-height: 1.8;
+      
+        font-size: 15px;
+      }
+      
+      .card-content a {
+        color: #d7b168;
+      
+        text-decoration: none;
+      
+        font-weight: 600;
+      
+        display: inline-flex;
+      
+        gap: 8px;
+      
+        align-items: center;
+      
+        transition: 0.3s;
+      }
+      
+      .card-content a:hover {
+        gap: 15px;
+      }
+
+
           .box {
             width: 24%;
             display: flex;
             flex-direction: column;
             border: 1px solid #ccc;
             border-radius: 8px;
-    
             margin: 2vh;
             background-color: #f9f9f9;
           }
-  
-          .box1 {
-            display: flex;
-            flex-direction: column;
-            width: 40vh; /* Adjust to your needs */
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin: 2vh;
-            background-color: #f9f9f9;
-          }
+
 
           .box-img{
             width: 40vh;
