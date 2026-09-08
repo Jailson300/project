@@ -11,31 +11,6 @@ body {
   line-height: 1.6;
 }
 
-
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 2vh;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .panel {
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
      
   .players_section{
           display: flex;
@@ -53,7 +28,9 @@ body {
       }
 
       .culture-card {
-        width: 40vh;
+        width: 50vh;
+
+        height: 85vh;
       
         background: #17131d;
       
@@ -68,7 +45,7 @@ body {
         cursor: pointer;
       
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-        margin: 5vh;
+        margin: 2vh;
       }
 
       .card-image {
@@ -129,7 +106,8 @@ body {
       
         line-height: 1.8;
       
-        font-size: 15px;
+        font-size: 0.8rem;
+        margin: 2vh;
       }
       
       .card-content a {
