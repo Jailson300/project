@@ -12,6 +12,25 @@ body {
   color: white;
 }
 
+h2{
+  color: #d7b168;
+  text-align: center;
+  margin: 3vh;
+  font-size: 3rem;
+}
+
+h3{
+  color: #d7b168;
+  text-align: center;
+  margin: 3vh;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1.3rem;
+  margin: 2vh;
+}
+
      
   .players_section{
           display: flex;
@@ -97,7 +116,7 @@ body {
       .card-content h4 {
         color: #d7b168;
       
-        font-size: 15px;
+        font-size: 1.5rem;
       
         font-weight: 500;
       }
@@ -186,8 +205,11 @@ body {
           }
         
           .box-content h2 {
+            color: black;
             margin-top: 0;
-            font-size: 18px;
+            font-size: 1.5rem;
+            text-shadow:  0.3rem 0.4rem 0.5rem black;
+            text-decoration: solid black;
           }
         
           .box-content p {
